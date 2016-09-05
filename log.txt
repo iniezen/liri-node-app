@@ -28,14 +28,30 @@ Liri Command: spotify-this-song,under,the,bridge
 
 {"Artist":"Red Hot Chili Peppers","Song":"Under The Bridge","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/5c052c976f9ad6610a1e8daf79e467e1e3943632","Album":"Blood Sugar Sex Magik (Deluxe Version)"}
 
+Liri Command: spotify-this-song,jump
+
+{"Artist":"Van Halen","Song":"Jump","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/5c4fca39cd964267d37164312c9c6baae0bcc117","Album":"1984"}
+
 Liri Command: spotify-this-song
 
 {"Artist":"Ace of Base","Song":"The Sign","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/177e65fc2b8babeaf9266c0ad2a1cb1e18730ae4","Album":"The Sign (US Album) [Remastered]"}
+
+Liri Command: movie-this,point,break
+
+{"Movie_Title":"Point Break","Release_Year":"1991","IMDB_Rating":"7.2","Country":"USA, Japan","Language":"English","Plot":"An FBI agent goes undercover to catch a gang of surfers who may be bank robbers.","Actors":"Patrick Swayze, Keanu Reeves, Gary Busey, Lori Petty","Rotten_Tomatoes_Rating":"6.1","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/point_break/"}
+
+Liri Command: movie-this,frozen
+
+{"Movie_Title":"Frozen","Release_Year":"2013","IMDB_Rating":"7.6","Country":"USA","Language":"English, Icelandic","Plot":"When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.","Actors":"Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad","Rotten_Tomatoes_Rating":"7.7","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/frozen_2013/"}
 
 Liri Command: movie-this
 
 {"Movie_Title":"Mr. Nobody","Release_Year":"2009","IMDB_Rating":"7.9","Country":"Belgium, Germany, Canada, France","Language":"English, Mohawk","Plot":"A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.","Actors":"Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham","Rotten_Tomatoes_Rating":"6.6","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/mr-nobody/"}
 
-Liri Command: movie-this,point,break
+Liri Command: spotify-this-song,"I Want it That Way"
 
-{"Movie_Title":"Point Break","Release_Year":"1991","IMDB_Rating":"7.2","Country":"USA, Japan","Language":"English","Plot":"An FBI agent goes undercover to catch a gang of surfers who may be bank robbers.","Actors":"Patrick Swayze, Keanu Reeves, Gary Busey, Lori Petty","Rotten_Tomatoes_Rating":"6.1","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/point_break/"}
+{"Artist":"Backstreet Boys","Song":"I Want It That Way","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6","Album":"The Hits--Chapter One"}
+
+Liri Command: spotify-this-song,"I Want it That Way"
+
+{"Artist":"Backstreet Boys","Song":"I Want It That Way","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6","Album":"The Hits--Chapter One"}
