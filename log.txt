@@ -1,0 +1,41 @@
+
+
+Liri Command: my-tweets
+
+Tweet: No doubt @CariceAnderson will rock the new job as well.  Congrats Carice!  They are lucky to have you. @HBSAlumni @tannyagax Created on: Wed Aug 31 23:17:45 +0000 2016      
+Tweet: Great work @Telescope_Inc , @facebook , &amp; @netflix !  Excellent #FacebookLive to promote the 2nd season of #Narcos !
+https://t.co/b6NrPBSN7W Created on: Fri Aug 26 23:00:52 +0000 2016      
+Tweet: @FondaTheatre what are tonight's set times for wild nothing please? Thank you! Created on: Thu Aug 25 01:38:36 +0000 2016      
+Tweet: Yep...seems legit. #trump #putin https://t.co/4vXGeniyEI Created on: Tue Aug 02 03:34:17 +0000 2016      
+Tweet: Our new baby girl.  Help us pick her name: 1. Gypsy 2. Lima 3. Luna. #frenchie #frenchbulldog @… https://t.co/hVmmn1mWxj Created on: Mon Jul 25 06:31:10 +0000 2016      
+Tweet: The best solution to the "make America shit again" #republican madness is for California to secede the union.  #californiaexit #trump Created on: Tue Jul 19 21:51:30 +0000 2016      
+Tweet: RT @balleralert: #MelaniaTrump be like https://t.co/xBgEpcHcqn Created on: Tue Jul 19 14:59:38 +0000 2016      
+Tweet: #alllivesmatters sounds nice, but just like "religious freedom", "real America", "right to life", words are ruined by conservative assholes Created on: Thu Jul 14 20:58:19 +0000 2016      
+Tweet: @tylerhale hence the ratings, explains it all ;) Created on: Thu Jul 14 03:40:31 +0000 2016      
+Tweet: @tylerhale could he be referring to your cactus guy? https://t.co/Luxmpziffs Created on: Thu Jul 14 03:25:13 +0000 2016      
+Tweet: In L.A., watching a Facebook LIVE video of my favorite Rock band directly from their gig in Chile! Great work @facebooklive! Created on: Sat Apr 09 04:43:09 +0000 2016      
+Tweet: RT @Steli: Sales recruiting secret: Don't look for sales experience, look for sales talent. https://t.co/TZHYOshUEU https://t.co/bKGQ8ra0aC Created on: Thu Apr 07 03:36:31 +0000 2016      
+Tweet: @BernieSanders totally agree with you, but probably why those Miami Cubans won't vote for you #pickurbattlesbernie #BernieSanders Created on: Fri Apr 01 14:57:24 +0000 2016      
+Tweet: Great advice: "sell the problem you solve, not the product" #startup #sales - fall in love with problem, not tech https://t.co/O3gfTbUqTa Created on: Fri Apr 01 14:44:24 +0000 2016      
+Tweet: Had the most vivid dream. @foals my fav band was playing a show in LA &amp; asked me to play guitar on stage. I've never been happier. #foals Created on: Tue Mar 29 13:15:25 +0000 2016      
+Tweet: Like being raised by @realDonaldTrump supporters, except it only took 24 hrs to turn into a racist inbred.#ai #trump https://t.co/HES3R0iRrY Created on: Fri Mar 25 06:45:03 +0000 2016      
+Tweet: This is why you need to curate user generated content at your professional events. #socialmarketing #fail https://t.co/7Yy7nhictF Created on: Wed Mar 16 02:54:29 +0000 2016      
+Tweet: RT @surfline: Peruvian surfbreak Chicama to become part of the National Waves Registry https://t.co/9WY0a9Xgg1 PC: Beto Santillan https://t… Created on: Thu Feb 25 07:25:32 +0000 2016      
+Tweet: Not easy, but necessary  https://t.co/nBV1SfLexw Created on: Sat Feb 20 18:38:28 +0000 2016      
+Tweet: Auto-correct on IOS devices is still terrible. Can humans really trust robots who can't even spell or form logical sentences? #ai #nlp #rant Created on: Sat Feb 20 15:42:28 +0000 2016      
+
+Liri Command: spotify-this-song,under,the,bridge
+
+{"Artist":"Red Hot Chili Peppers","Song":"Under The Bridge","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/5c052c976f9ad6610a1e8daf79e467e1e3943632","Album":"Blood Sugar Sex Magik (Deluxe Version)"}
+
+Liri Command: spotify-this-song
+
+{"Artist":"Ace of Base","Song":"The Sign","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/177e65fc2b8babeaf9266c0ad2a1cb1e18730ae4","Album":"The Sign (US Album) [Remastered]"}
+
+Liri Command: movie-this
+
+{"Movie_Title":"Mr. Nobody","Release_Year":"2009","IMDB_Rating":"7.9","Country":"Belgium, Germany, Canada, France","Language":"English, Mohawk","Plot":"A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.","Actors":"Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham","Rotten_Tomatoes_Rating":"6.6","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/mr-nobody/"}
+
+Liri Command: movie-this,point,break
+
+{"Movie_Title":"Point Break","Release_Year":"1991","IMDB_Rating":"7.2","Country":"USA, Japan","Language":"English","Plot":"An FBI agent goes undercover to catch a gang of surfers who may be bank robbers.","Actors":"Patrick Swayze, Keanu Reeves, Gary Busey, Lori Petty","Rotten_Tomatoes_Rating":"6.1","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/point_break/"}

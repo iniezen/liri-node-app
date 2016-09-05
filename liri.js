@@ -65,7 +65,7 @@ if(nodeArgs[2]=="my-tweets"){
 	});
 	// appends Liri Command
 
-	fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    ", function(err){
+	fs.appendFile("log.txt", "\nLiri Command: "+nodeArgs.slice(2)+"\n\n", function(err){
 
 	});
 
@@ -89,7 +89,7 @@ if(nodeArgs[2]=="my-tweets"){
 
 			// appends tweet results to log.txt file
 
-	    	fs.appendFile("log.txt", lastTweets, function(err){
+	    	fs.appendFile("log.txt", lastTweets+"\n", function(err){
 
 	    	});
 	    };	
@@ -159,7 +159,7 @@ if(nodeArgs[2]=="spotify-this-song" && nodeArgs.length>3){
 
 
 
-		fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(songResult), function(err){
+		fs.appendFile("log.txt", "\nLiri Command: "+nodeArgs.slice(2)+"\n\n"+JSON.stringify(songResult)+"\n", function(err){
 
 	    });
 
@@ -210,7 +210,7 @@ if(nodeArgs[2]=="spotify-this-song" && nodeArgs.length===3){
 
 
 
-		fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(songDefaultResult), function(err){
+		fs.appendFile("log.txt", "\nLiri Command: "+nodeArgs.slice(2)+"\n\n"+JSON.stringify(songDefaultResult)+"\n", function(err){
 
 	    });
 	});    
@@ -313,7 +313,7 @@ if(nodeArgs[2]=="movie-this" & nodeArgs.length>3){
 
 
 
-	    	fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(filmResult), function(err){
+	    	fs.appendFile("log.txt", "\nLiri Command: "+nodeArgs.slice(2)+"\n\n"+JSON.stringify(filmResult)+"\n", function(err){
 
 	    	});
 
@@ -406,7 +406,7 @@ if(nodeArgs[2]=="movie-this" & nodeArgs.length===3){
 
 
 
-	    	fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(filmDefaultResult), function(err){
+	    	fs.appendFile("log.txt", "\nLiri Command: "+nodeArgs.slice(2)+"\n\n"+JSON.stringify(filmDefaultResult)+"\n", function(err){
 
 	    	});
 		}
