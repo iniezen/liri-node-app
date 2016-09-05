@@ -5,17 +5,19 @@ var request = require('request');
 // fs is an NPM package for reading and writing files 
 var fs = require('fs');
 
+// requires keys.js file
 var keys=require('./keys.js');
 
 // Store all of the arguments in an array 
 var nodeArgs = process.argv;
 
+// creating new array to test if I can fix variable scoping issue for "do-what-it-says"
 var dataArr;
 
 
 
 
-// start with "do-what-it-says"..change the order around and set functions to variables and that should work
+// start with "do-what-it-says"..changed the order around and set functions to variables, not working
 
 
 	// =========do-what-it-says Section==========================================================
@@ -38,16 +40,6 @@ if(nodeArgs[2]=="do-what-it-says"){
 		nodeArgs[2]=dataArr[0];
 		nodeArgs[3]=dataArr[1];
 		console.log(nodeArgs[2]);
-
-
-
-
-		// We will then re-display the content with the split for aesthetics.
-
-		// var newDataArr = dataArr.map(function(thing){
-
-
-		// 	console.log(thing);
 		
 	});
 
@@ -63,7 +55,7 @@ if(nodeArgs[2]=="do-what-it-says"){
 // =========Twitter API Section==========================================================
 if(nodeArgs[2]=="my-tweets"){
 	 
-	
+	// provides access keys in keys.js file to twitter api
 	var client = new Twitter({
 	  consumer_key: keys.consumer_key,
 	  consumer_secret: keys.consumer_secret,
@@ -71,16 +63,35 @@ if(nodeArgs[2]=="my-tweets"){
 	  access_token_secret: keys.access_token_secret
 
 	});
+	// appends Liri Command
+
+	fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    ", function(err){
+
+	});
+
+	// gets tweets from Twitter api, sets count to 20
 
 	var params = {screen_name: 'israelniezen'};
 	client.get('statuses/user_timeline', {screen_name: 'israelniezen', count: 20}, function(error, tweets, response) {
 	  if (!error) {
 
+	  	// loops through all tweets to get text and create date data for each
+
 	  	for (var i=0; i<tweets.length; i++){
 
 
-	    	console.log("Tweet: "+tweets[i].text+" Created on: "+tweets[i].created_at);
+	    	// console.log("Tweet: "+tweets[i].text+" Created on: "+tweets[i].created_at);
+
+	    	var lastTweets="Tweet: "+tweets[i].text+" Created on: "+tweets[i].created_at+"      ";
 	    	console.log("");
+	    	console.log(lastTweets);
+
+
+			// appends tweet results to log.txt file
+
+	    	fs.appendFile("log.txt", lastTweets, function(err){
+
+	    	});
 	    };	
 
 	  }
@@ -135,6 +146,23 @@ if(nodeArgs[2]=="spotify-this-song" && nodeArgs.length>3){
 	    // * The album that the song is from
 		console.log('Album Name: '+data.tracks.items[0].album.name);
 		console.log("");
+
+
+		var songResult = {
+		Artist: data.tracks.items[0].artists[0].name,
+		Song: data.tracks.items[0].name,
+		Spotify_Preview_Link: data.tracks.items[0].preview_url,
+		Album: data.tracks.items[0].album.name
+
+		}
+
+
+
+
+		fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(songResult), function(err){
+
+	    });
+
 	});    
 };
 
@@ -170,6 +198,21 @@ if(nodeArgs[2]=="spotify-this-song" && nodeArgs.length===3){
 	    // * The album that the song is from
 		console.log('Album Name: '+data.tracks.items[4].album.name);
 		console.log("");
+
+		var songDefaultResult = {
+		Artist: data.tracks.items[4].artists[0].name,
+		Song: data.tracks.items[4].name,
+		Spotify_Preview_Link: data.tracks.items[4].preview_url,
+		Album: data.tracks.items[4].album.name
+
+		}
+
+
+
+
+		fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(songDefaultResult), function(err){
+
+	    });
 	});    
 };
 
@@ -235,6 +278,47 @@ if(nodeArgs[2]=="movie-this" & nodeArgs.length>3){
 	   		 // * Rotten Tomatoes URL
 	    	console.log("Rotten Tomatoes URL: " + JSON.parse(body)["tomatoURL"])
 	    	console.log("");
+
+
+	    	var filmResult = {
+
+		    	Movie_Title: JSON.parse(body)["Title"],
+			
+		   		 // * Year the movie came out.
+		    	Release_Year: JSON.parse(body)["Year"],
+			
+		   		 // * IMDB Rating of the movie.
+				IMDB_Rating: JSON.parse(body)["imdbRating"],
+			
+		   		 // * Country where the movie was produced.
+		    	Country: JSON.parse(body)["Country"],
+			
+		   		 // * Language of the movie.
+		    	Language: JSON.parse(body)["Language"],
+			
+		   		 // * Plot of the movie.
+		    	Plot: JSON.parse(body)["Plot"],
+			
+		   		 // * Actors in the movie.
+		    	Actors: JSON.parse(body)["Actors"],
+			
+		   		 // * Rotten Tomatoes Rating.
+		        Rotten_Tomatoes_Rating: JSON.parse(body)["tomatoRating"],
+			
+		   		 // * Rotten Tomatoes URL
+		    	Rotten_Tomatoes_URL: JSON.parse(body)["tomatoURL"]
+
+
+	    	}
+
+
+
+	    	fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(filmResult), function(err){
+
+	    	});
+
+
+
 		}
 	});
 };	
@@ -287,6 +371,44 @@ if(nodeArgs[2]=="movie-this" & nodeArgs.length===3){
 	   		 // * Rotten Tomatoes URL
 	    	console.log("Rotten Tomatoes URL: " + JSON.parse(body)["tomatoURL"])
 	    	console.log("");
+
+
+	    	var filmDefaultResult = {
+
+		    	Movie_Title: JSON.parse(body)["Title"],
+			
+		   		 // * Year the movie came out.
+		    	Release_Year: JSON.parse(body)["Year"],
+			
+		   		 // * IMDB Rating of the movie.
+				IMDB_Rating: JSON.parse(body)["imdbRating"],
+			
+		   		 // * Country where the movie was produced.
+		    	Country: JSON.parse(body)["Country"],
+			
+		   		 // * Language of the movie.
+		    	Language: JSON.parse(body)["Language"],
+			
+		   		 // * Plot of the movie.
+		    	Plot: JSON.parse(body)["Plot"],
+			
+		   		 // * Actors in the movie.
+		    	Actors: JSON.parse(body)["Actors"],
+			
+		   		 // * Rotten Tomatoes Rating.
+		        Rotten_Tomatoes_Rating: JSON.parse(body)["tomatoRating"],
+			
+		   		 // * Rotten Tomatoes URL
+		    	Rotten_Tomatoes_URL: JSON.parse(body)["tomatoURL"]
+
+
+	    	}
+
+
+
+	    	fs.appendFile("log.txt", "Liri Command: "+nodeArgs.slice(2)+"    "+JSON.stringify(filmDefaultResult), function(err){
+
+	    	});
 		}
 	});
 };	
