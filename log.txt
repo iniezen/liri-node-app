@@ -55,3 +55,12 @@ Liri Command: spotify-this-song,"I Want it That Way"
 Liri Command: spotify-this-song,"I Want it That Way"
 
 {"Artist":"Backstreet Boys","Song":"I Want It That Way","Spotify_Preview_Link":"https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6","Album":"The Hits--Chapter One"}
+
+Liri Command: movie-this,point,break
+
+{"Movie_Title":"Point Break","Release_Year":"1991","IMDB_Rating":"7.2","Country":"USA, Japan","Language":"English","Plot":"An FBI agent goes undercover to catch a gang of surfers who may be bank robbers.","Actors":"Patrick Swayze, Keanu Reeves, Gary Busey, Lori Petty","Rotten_Tomatoes_Rating":"6.1","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/point_break/"}
+
+Liri Command: movie-this, "Point Break"
+
+
+{"Movie_Title":"Point Break","Release_Year":"1991","IMDB_Rating":"7.2","Country":"USA, Japan","Language":"English","Plot":"An FBI agent goes undercover to catch a gang of surfers who may be bank robbers.","Actors":"Patrick Swayze, Keanu Reeves, Gary Busey, Lori Petty","Rotten_Tomatoes_Rating":"6.1","Rotten_Tomatoes_URL":"http://www.rottentomatoes.com/m/point_break/"}

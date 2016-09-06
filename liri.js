@@ -17,7 +17,7 @@ var dataArr;
 
 
 
-// start with "do-what-it-says"..changed the order around and set functions to variables, not working
+// start with "do-what-it-says"..changed the order around and set function to variable liriFunc, now working
 
 
 	// =========do-what-it-says Section==========================================================
